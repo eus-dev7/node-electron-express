@@ -9,10 +9,19 @@ app.use(express.static('public'))
 app.get('/pics',(req,res)=>res.send(pics))
 
 io.on('connection',function(socket){
-    console.log("a user connected");
 
+    socket.on('dragstart',(message)=>{
+        const pic = pics.find(currentPic=>currentPic.name===message.name)
+        pic.locked=false;
+        io.emit('update',pic)
+    })
     socket.on('dragend',(message)=>{
-        console.log(message);
+        const pic = pics.find(currentPic=>currentPic.name===message.name)
+        pic.locked=true;
+        pic.x=message.x;
+        pic.y=message.y;
+
+        io.emit('update',pic)
     })
 })
 

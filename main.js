@@ -16,7 +16,7 @@ function createWindow () {
   })
 
   // y carga el  index.html de la aplicación.
-  win.loadFile('public/index.html')
+  win.loadFile('public/pics.html')
   win.webContents.openDevTools();
 }
 

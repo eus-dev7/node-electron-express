@@ -1,0 +1,37 @@
+[
+    {
+        "name":"Sol",
+        "image":"https://spaceplace.nasa.gov/review/sunburn/sunburn1.sp.png",
+        "loked":false,
+        "x":0,
+        "y":0
+    },
+    {
+        "name":"tierra",
+        "image":"https://spaceplace.nasa.gov/templates/featured/earth/earth300.png",
+        "loked":false,
+        "x":0,
+        "y":0
+    },
+    {
+        "name":"satelite",
+        "image":"https://spaceplace.nasa.gov/review/build-a-spacecraft/generic-sat.en.png",
+        "loked":false,
+        "x":0,
+        "y":0
+    },
+    {
+        "name":"pluto",
+        "image":"https://spaceplace.nasa.gov/templates/featured/solar-system/pluto300.png",
+        "loked":false,
+        "x":0,
+        "y":0
+    },
+    {
+        "name":"galaxia",
+        "image":"https://spaceplace.nasa.gov/templates/featured/space/galaxies300.png",
+        "loked":false,
+        "x":0,
+        "y":0
+    }
+]
